@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 import ErrorProneComponent from '@/components/ErrorProneComponent';
 import ErrorBoundary from '@/components/ErrorBoundary';
 import React from "react"
-
+import { useEffect } from "react";
 
 const Home: React.FC = () => {
 
@@ -28,8 +28,6 @@ const Home: React.FC = () => {
   const info = data?.episodes.info
 
   return (
-    <ErrorBoundary>
-      <ErrorProneComponent />
         <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#A3D5E0] to-[#F4F4F4] text-gray-800">
           {/* Header */}
           <header className="bg-[#4CA1AF] text-white py-6 text-center shadow-md">
@@ -71,7 +69,6 @@ const Home: React.FC = () => {
             <p>&copy; 2024 Rick and Morty Fan Page</p>
           </footer>
         </div>
-      </ErrorBoundary>
 
   )
 }

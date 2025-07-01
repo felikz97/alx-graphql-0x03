@@ -1,3 +1,6 @@
+import * as Sentry from '@sentry/react';
+ 
+
 interface State {
     hasError: boolean;
     }
@@ -36,5 +39,6 @@ interface State {
         return this.props.children;
     }
 }
+
 
 export default ErrorBoundary;
